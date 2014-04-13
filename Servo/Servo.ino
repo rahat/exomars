@@ -6,7 +6,7 @@ Servo myservo;  // create servo object to control a servo
                 // a maximum of eight servo objects can be created 
  
 int pos = 0;    // variable to store the servo position 
-String color = "black";
+String color = "grey";
  
 void setup() 
 { 
@@ -15,7 +15,7 @@ void setup()
   for(pos = 0; pos < 45; pos += 1)  // goes from 0 degrees to 180 degrees 
   {                                  // in steps of 1 degree 
     myservo.write(pos);              // tell servo to go to position in variable 'pos' 
-    delay(15);                       // waits 15ms for the servo to reach the position 
+    delay(100);                       // waits 15ms for the servo to reach the position 
   } 
   }
   if (color == "white") {
